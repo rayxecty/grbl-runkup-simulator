@@ -7,7 +7,7 @@ module.exports = {
     devServer: {
         open: true,
         openPage: "index.html",
-        contentBase: path.join(__dirname, "src"),
+        contentBase: path.join(__dirname),
         watchContentBase: true,
         port: 8080,
     },
@@ -40,7 +40,7 @@ module.exports = {
     entry: {app: './js/index.js'},
     output: {
         path: path.join(__dirname, "dist"),
-        publicPath: "/js/",
+        publicPath: "/src/js/",
         filename: '[name].min.js',
         library: ["com", "example"],
         libraryTarget: 'umd'
